@@ -262,7 +262,8 @@ main .skills {
   display: flex;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
 }
-.percent-text{
+
+.percent-text {
   position: absolute;
   right: -25px;
   top: 50%;
@@ -277,12 +278,13 @@ main .skills {
 .skill-tit {
   width: 300px;
 }
-.skill-tit h3{
+
+.skill-tit h3 {
   text-align: center;
   margin-bottom: 10px;
 }
 
-.project h1{
+.project h1 {
   font-size: 30px;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
   -webkit-background-clip: text;
@@ -291,7 +293,7 @@ main .skills {
   margin-top: 20px;
 }
 
-.list{
+.list {
   width: 80%;
   padding: 50px;
   display: grid;
@@ -299,7 +301,8 @@ main .skills {
   justify-items: center;
   margin: auto;
 }
-.cards{
+
+.cards {
   width: 300px;
   height: 300px;
   display: flex;
@@ -313,26 +316,31 @@ main .skills {
   box-shadow: 0px 0px 15px var(--brand);
   margin-top: 20px;
 }
-.card_img{
+
+.card_img {
   width: 300px;
   height: 150px;
 }
-.card_img img{
+
+.card_img img {
   width: 100%;
   height: 100%;
   margin-top: -8px;
 }
-.textbox{
+
+.textbox {
   width: 100%;
 }
-.textbox h2{
+
+.textbox h2 {
   font-size: 20px;
   color: white;
   font-weight: 600;
   text-align: center;
   margin-top: 10px;
 }
-.textbox button{
+
+.textbox button {
   width: 100%;
   height: 40px;
   border-radius: 8px;
@@ -344,11 +352,13 @@ main .skills {
   font-family: Urbanist, sans-serif;
   margin-top: 10px;
 }
-.textbox button:hover{
+
+.textbox button:hover {
   opacity: 70%;
   cursor: pointer;
 }
-.group{
+
+.group {
   width: 80px;
   height: 25px;
   display: flex;
@@ -360,11 +370,13 @@ main .skills {
   margin: 15px 0px 0px 10px;
   font-size: 12px;
 }
-.group i{
+
+.group i {
   font-size: 12px;
   margin-right: 10px;
 }
-.group1{
+
+.group1 {
   width: 80px;
   height: 25px;
   display: flex;
@@ -376,10 +388,12 @@ main .skills {
   margin: 15px 0px 0px 10px;
   font-size: 12px;
 }
-.stack{
+
+.stack {
   display: flex;
 }
-.achievement{
+
+.achievement {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -387,7 +401,8 @@ main .skills {
   align-items: center;
   background: var(--panel);
 }
-.achievement h1{
+
+.achievement h1 {
   font-size: 30px;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
   -webkit-background-clip: text;
@@ -395,37 +410,44 @@ main .skills {
   text-align: center;
   margin-top: 20px;
 }
-.momentos{
+
+.momentos {
   width: 88%;
   padding: 50px;
 }
-.box1{
+
+.box1 {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
-.ring{
+
+.ring {
   width: 20px;
   height: 20px;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
   border-radius: 50%;
   border: 5px solid var(--accent);
 }
-.gotdetails h3{
+
+.gotdetails h3 {
   font-size: 20px;
   color: var(--text);
 }
-.gotdetails h2{
+
+.gotdetails h2 {
   font-size: 16px;
   font-weight: 500;
   margin-top: 10px;
 }
-.gotdetails p{
+
+.gotdetails p {
   color: var(--muted);
   margin-top: 10px;
   font-weight: 500;
 }
-.group2{
+
+.group2 {
   width: 80px;
   height: 25px;
   display: flex;
@@ -437,6 +459,26 @@ main .skills {
   font-size: 12px;
   margin-top: -10px;
 }
+
+.learn{
+  width: 100%;
+  height: 200px;
+}
+footer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--muted);
+}
+
+footer h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
 @media screen and (max-width: 750px) {
   .nav-links {
     display: none;
@@ -446,13 +488,16 @@ main .skills {
     height: 50px;
     padding: 0 1rem;
   }
-  .title h1{
+
+  .title h1 {
     font-size: 14px;
   }
-  .logo{
+
+  .logo {
     width: 100%;
     height: 100%;
   }
+
   .details {
     flex-direction: column-reverse;
     height: auto;
@@ -483,9 +528,11 @@ main .skills {
     height: 20px;
     margin-top: 20px;
   }
-  .info h2{
+
+  .info h2 {
     font-size: 12px;
   }
+
   .name h1 {
     font-size: 24px;
   }
@@ -497,21 +544,25 @@ main .skills {
   .links {
     justify-content: center;
   }
-  .links i{
+
+  .links i {
     font-size: 20px;
   }
+
   .details .image img {
     width: 120px;
     height: 120px;
     border-width: 10px;
     border-radius: 30px;
   }
-  .progress{
+
+  .progress {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .skills h1 {
     font-size: 24px;
     margin-top: 40px;
@@ -529,29 +580,50 @@ main .skills {
   }
 
   .bar .percent {
+    width: 120px;
     height: 4px;
   }
-  .list{
+
+  .skill-tit {
+    width: 250px;
+  }
+
+  .list {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .cards{
+
+  .cards {
     width: 250px;
     height: 300px;
   }
-  .momentos{
+
+  .momentos {
     padding: 20px;
   }
-  .gotdetails h3{
+
+  .gotdetails h3 {
     font-size: 18px;
   }
-  .gotdetails h2{
+
+  .gotdetails h2 {
     font-size: 16px;
   }
-  .gotdetails p{
+
+  .gotdetails p {
     font-size: 12px;
   }
+
+  .ring {
+    width: 20px;
+    height: 16px;
+  }
+
+  footer h2 {
+    font-size: 12px;
+  }
+
 }
