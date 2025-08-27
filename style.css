@@ -184,8 +184,7 @@ nav {
   border-radius: 50px;
   box-shadow: 0px 0px 15px var(--brand);
 }
-
-main .skills {
+.about{
   width: 100%;
   height: max-content;
   display: flex;
@@ -195,6 +194,33 @@ main .skills {
   margin: auto;
   background-color: var(--panel);
 }
+.about h1{
+  font-size: 30px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-top: 20px;
+}
+.about p{
+  font-size: 18px;
+  color: #94a3b8;
+  margin-bottom: 50px;
+  padding: 50px;
+}
+.myinfo{
+  width: 80%;
+  margin-top: 20px;
+}
+/* Skills */
+main .skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 
 .skills h1 {
   font-size: 30px;
@@ -202,7 +228,7 @@ main .skills {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .skills .progress {
@@ -283,14 +309,17 @@ main .skills {
   text-align: center;
   margin-bottom: 10px;
 }
-
+.project{
+  background: var(--panel);
+  margin-top: 20px;
+}
 .project h1 {
   font-size: 30px;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  margin-top: 20px;
+  padding: 20px;
 }
 
 .list {
@@ -399,7 +428,7 @@ main .skills {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--panel);
+  
 }
 
 .achievement h1 {
@@ -459,49 +488,69 @@ main .skills {
   font-size: 12px;
   margin-top: -10px;
 }
-
+.prizes{
+  width: 100%;
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  margin: auto;
+}
+.one{
+  width: 60%;
+  height: 100px;
+  border: 1px solid var(--brand);
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px var(--brand);
+}
+.one h1{
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.one p{
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
 .learn{
   width: 100%;
   display: flex;
   justify-items: center;
   align-content: center;
   margin: auto;
+  background-color: var(--panel);
 }
-.small_box{
+.work{
   width: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-}
-.teach{
-  height: 300px;
   padding: 20px;
-  border-radius: 8px;
-  border: 1px solid var(--brand);
-  box-shadow: 0px 0px 15px var(--brand);
 }
-.teach h1{
+.small_box{
+  width: 100%;
+  padding: 50px;
+}
+.small_box h1{
   font-size: 24px;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
-  padding: 20px;
+  text-align: left;
 }
-.teach button{
-  width: 40%;
-  height: 40px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--brand), var(--brand-2));
-  border: 1px;
-  font-size: 14px;
-  color: var(--text);
-  font-weight: 500;
-  font-family: Urbanist, sans-serif;
+.small_box p{
+  color: #94a3b8;
   margin-top: 10px;
-  cursor: pointer;
 }
+
 .contact_details{
   width: 50%;
   padding: 50px;
@@ -691,6 +740,13 @@ footer h2 {
     width: 28px;
     height: 28px;
   }
+  .about h1{
+    font-size: 24px;
+  }
+  .about p{
+    font-size: 12px;
+    padding: 0px;
+  }
 
   .bar .percent {
     width: 120px;
@@ -709,9 +765,16 @@ footer h2 {
     justify-content: center;
   }
 
+  .project h1{
+    font-size: 24px;
+  }
+
   .cards {
     width: 250px;
     height: 300px;
+  }
+  .achievement h1{
+    font-size: 24px;
   }
 
   .momentos {
@@ -740,16 +803,12 @@ footer h2 {
     flex-direction: column;
     margin-top: 50px;
   }
+  .work{
+    width: 100%;
+  }
   .small_box{
     width: 100%;
     padding: 30px;
-  }
-  .teach{
-    width: 100%;
-    padding: 20px;
-  }
-  .teach button{
-    width: 100%;
   }
   .contact_details{
     width: 100%;
@@ -763,6 +822,7 @@ footer h2 {
   }
   #contact-form input{
     font-size: 14px;
+    height: 30px;
   }
   #contact-form button{
     width: 100%;

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshay Munnur - Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Akshay Munnur, a B.Tech Computer Science student. Showcasing projects, skills, and achievements in web development, AI, and design.">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7717c1610a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -18,7 +20,7 @@
                 <h1>Akshay Munnur</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#">About</a></li>
+                <li><a href="#_about">About</a></li>
                 <li><a href="#_skill">Skills</a></li>
                 <li><a href="#_project">Projects</a></li>
                 <li><a href="#_achievement">Achievements</a></li>
@@ -33,7 +35,7 @@
                 <div class="info">
                     <h2>B.Tech - 2<sup>nd</sup> Year - Student</h2>
                 </div>
-                <h1>Hii, I'm <strong>Akshay Munnur</strong> <br>- I Build Web Projects </h1><br>
+                <h1>Hi, I'm <strong>Akshay Munnur</strong> <br>- I Build Creative & Innovative Projects </h1><br>
                 <p>“I am passionate about exploring innovative technologies and creative design solutions. By showcasing
                     my
                     projects and insights, I aim to connect with professionals, learn from their expertise, and
@@ -41,7 +43,7 @@
                     to building impactful, technology-driven solutions that bridge creativity with innovation.”</p>
                 <div class="links">
                     <a href="mailto:munnurakshay2004@gmail.com?subject=Hello&body=Hi%20Akshay,%0A%0AI%20would%20like%20to%20get%20in%20touch%20with%20you."
-                        target="_msin"><i class="fa-solid fa-envelope"></i></a>
+                        target="_blank"><i class="fa-solid fa-envelope"></i></a>
                     <a href="https://www.linkedin.com/in/akshaymunnur" target="_main"><i
                             class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/munnurakshay" target="_main"><i class="fa-brands fa-github"></i></a>
@@ -53,6 +55,22 @@
         </div>
     </div>
     <main>
+        <div class="about" id="_about">
+            <h1>About Me</h1>
+            <div class="myinfo">
+                <p>I’m <b>Akshay Munnur</b>, a <b>B.Tech 2nd-year Computer Science student at Bharat Institute of
+                        Engineering &
+                        Technology</b>. I build web applications, automation tools, and hackathon projects, combining
+                    creativity
+                    with functionality. Experienced in HTML, CSS, JavaScript, Firebase, and Figma, I strive to create
+                    impactful software solutions that solve real-world problems. <br>
+                    I’ve contributed to projects like Nexmerce, Amazon Trade, and WayBot, and participated in four
+                    hackathons, focusing on innovation and teamwork. I’m passionate about exploring new technologies,
+                    improving user experiences, and turning ideas into real-world digital solutions. My goal is to
+                    collaborate with forward-thinking teams and make meaningful contributions in web development, AI,
+                    and product design.</p>
+            </div>
+        </div>
         <div class="skills" id="_skill">
             <h1>Skills</h1>
             <div class="progress">
@@ -92,8 +110,8 @@
                         </div>
                         <div class="percent">
                             <div class="fill">
-                                <div class="progressbar" style="width: 30%;"></div>
-                                <span class="percent-text">30%</span>
+                                <div class="progressbar" style="width: 60%;"></div>
+                                <span class="percent-text">60%</span>
                             </div>
                         </div>
                     </div>
@@ -201,18 +219,35 @@
                         <h3>CodeStorm - 2k24</h3>
                         <h2>2024</h2><br>
                         <div class="group2">Participants</div>
-                        <p>"Led a 4-member team in CodeStorm 2k24 to prototype Nexmerce, a digital business management
+                        <p>"Led a 4-member team to prototype Nexmerce, a digital business management
                             platform."</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="prizes">
+            <div class="one">
+                <h1>Projects</h1>
+                <p id="num">1</p>
+            </div>
+            <div class="one">
+                <h1>Hackathons</h1>
+                <p id="num1">4</p>
+            </div>
+            <div class="one">
+                <h1>Certificates</h1>
+                <p id="num2">5</p>
+            </div>
+        </div>
         <div class="learn">
-            <div class="small_box">
-                <div class="teach">
-                    <h1>Learn</h1>
-                    <p>"My little learning corner — filled with roadmaps, notes, and must-know tech to help you on your journey."</p>
-                    <button onclick="window.location.href='learn.html'">View Website</button>
+            <div class="work">
+                <div class="small_box">
+                    <h1>Let's Work Together</h1>
+                    <p>"I’m always excited to collaborate on innovative projects, freelance opportunities, or
+                        internships.
+                        Whether you have an idea to bring to life or need help with development & design, let’s connect
+                        and
+                        build something amazing together."</p>
                 </div>
             </div>
             <div class="contact_details">
@@ -254,6 +289,35 @@
                 });
             </script>
 
+            <!-- certificates -->
+            <script>
+
+                let count1 = 1;
+                const numDiv1 = document.getElementById('num');
+                const interval1 = setInterval(() => {
+                    count1++;
+                    numDiv1.textContent = count1;
+                    if (count1 === 5) clearInterval(interval1);
+                }, 1000);
+
+
+                let count2 = 1;
+                const numDiv2 = document.getElementById('num1');
+                const interval2 = setInterval(() => {
+                    count2++;
+                    numDiv2.textContent = count2;
+                    if (count2 === 4) clearInterval(interval2);
+                }, 1000);
+
+
+                let count3 = 1;
+                const numDiv3 = document.getElementById('num2');
+                const interval3 = setInterval(() => {
+                    count3++;
+                    numDiv3.textContent = count3;
+                    if (count3 === 5) clearInterval(interval3);
+                }, 1000);
+            </script>
         </div>
     </main>
     <footer>
