@@ -494,7 +494,7 @@ main .skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  padding: 20px;
+  padding: 30px;
   justify-items: center;
   margin: auto;
 }
@@ -519,13 +519,27 @@ main .skills {
   text-align: center;
   margin-top: 10px;
 }
+.experience{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+}
+.experience h2{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .learn{
   width: 100%;
   display: flex;
   justify-items: center;
   align-content: center;
   margin: auto;
-  background-color: var(--panel);
 }
 .work{
   width: 50%;
@@ -797,6 +811,12 @@ footer h2 {
     width: 20px;
     height: 16px;
   }
+  .one h1{
+    font-size:20px;
+  }
+  .experience h2{
+    font-size: 24px;
+  }
   .learn{
     width: 100%;
     display: flex;
@@ -808,7 +828,13 @@ footer h2 {
   }
   .small_box{
     width: 100%;
-    padding: 30px;
+    padding: 30px;   
+  }
+  .small_box h1{
+    font-size: 24px;
+  }
+  .small_box p{
+    font-size: 12px;
   }
   .contact_details{
     width: 100%;
