@@ -207,6 +207,7 @@ nav {
   color: #94a3b8;
   margin-bottom: 50px;
   padding: 50px;
+  text-align: center;
 }
 .myinfo{
   width: 80%;
@@ -857,5 +858,6 @@ footer h2 {
   footer h2 {
     font-size: 12px;
   }
+
 
 }
