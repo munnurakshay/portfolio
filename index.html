@@ -58,7 +58,7 @@
         <div class="about" id="_about">
             <h1>About Me</h1>
             <div class="myinfo">
-                <p>I’m <b>Akshay Munnur</b>, a <b>B.Tech 2nd-year Computer Science student at Bharat Institute of
+                <p>I’m <b>Akshay Munnur</b>, a  <b>B.Tech 2nd-year Computer Science student at Bharat Institute of
                         Engineering &
                         Technology</b>. I build web applications, automation tools, and hackathon projects, combining
                     creativity
@@ -189,6 +189,7 @@
                     </div>
                 </div>
             </div>
+            <button id="more_projects" onclick="window.location.href='more_projects.html'">View All Projects</button>
         </div>
         <div class="achievement" id="_achievement">
             <h1>Achievements</h1>
@@ -230,7 +231,7 @@
             <div class="prizes">
                 <div class="one">
                     <h1>Projects</h1>
-                    <p id="num">1</p>
+                    <p id="num">5</p>
                 </div>
                 <div class="one">
                     <h1>Hackathons</h1>
@@ -290,36 +291,6 @@
                             msgBox.style.display = "block";
                         });
                 });
-            </script>
-
-            <!-- certificates -->
-            <script>
-
-                let count1 = 1;
-                const numDiv1 = document.getElementById('num');
-                const interval1 = setInterval(() => {
-                    count1++;
-                    numDiv1.textContent = count1;
-                    if (count1 === 5) clearInterval(interval1);
-                }, 1000);
-
-
-                let count2 = 1;
-                const numDiv2 = document.getElementById('num1');
-                const interval2 = setInterval(() => {
-                    count2++;
-                    numDiv2.textContent = count2;
-                    if (count2 === 4) clearInterval(interval2);
-                }, 1000);
-
-
-                let count3 = 1;
-                const numDiv3 = document.getElementById('num2');
-                const interval3 = setInterval(() => {
-                    count3++;
-                    numDiv3.textContent = count3;
-                    if (count3 === 5) clearInterval(interval3);
-                }, 1000);
             </script>
         </div>
     </main>

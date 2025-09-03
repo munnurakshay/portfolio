@@ -312,6 +312,9 @@ main .skills {
 .project{
   background: var(--panel);
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .project h1 {
   font-size: 30px;
@@ -354,15 +357,30 @@ main .skills {
 .card_img img {
   width: 100%;
   height: 100%;
-  margin-top: -8px;
+  margin-top: -10px;
 }
-
+#more_projects{
+  width: 20%;
+  height: 40px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  border: 1px;
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 500;
+  font-family: Urbanist, sans-serif;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+#more_projects:hover{
+  opacity: 70%;
+}
 .textbox {
   width: 100%;
 }
 
 .textbox h2 {
-  font-size: 20px;
+  font-size:20px;
   color: white;
   font-weight: 600;
   text-align: center;
@@ -731,9 +749,7 @@ footer h2 {
     border-width: 10px;
     border-radius: 30px;
   }
-  .about p{
-    text-align: center;
-  }
+
   .progress {
     width: 100%;
     display: flex;
@@ -762,6 +778,7 @@ footer h2 {
   .about p{
     font-size: 12px;
     padding: 0px;
+    text-align: center;
   }
 
   .bar .percent {
@@ -788,6 +805,9 @@ footer h2 {
   .cards {
     width: 250px;
     height: 300px;
+  }
+  #more_projects{
+    width: 40%;
   }
   .achievement h1{
     font-size: 24px;
@@ -859,6 +879,5 @@ footer h2 {
   footer h2 {
     font-size: 12px;
   }
-
 
 }
