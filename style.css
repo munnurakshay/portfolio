@@ -207,7 +207,6 @@ nav {
   color: #94a3b8;
   margin-bottom: 50px;
   padding: 50px;
-  text-align: center;
 }
 .myinfo{
   width: 80%;
@@ -732,7 +731,9 @@ footer h2 {
     border-width: 10px;
     border-radius: 30px;
   }
-
+  .about p{
+    text-align: center;
+  }
   .progress {
     width: 100%;
     display: flex;
