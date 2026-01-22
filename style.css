@@ -644,6 +644,61 @@ main .skills {
   opacity: 80%;
   color: white;
 }
+/* Popup Background */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+/* Show popup */
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Popup Box */
+.popup-box {
+  background: var(--panel);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 25px var(--brand);
+  transform: scale(0.7);
+  animation: popupScale 0.4s ease forwards;
+}
+
+/* Check icon */
+.checkmark {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: white;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/* Animation */
+@keyframes popupScale {
+  to {
+    transform: scale(1);
+  }
+}
 
 /* Footer */
 footer {
