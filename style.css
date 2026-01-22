@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -8,23 +8,15 @@
 
 :root {
   --bg: #0b1220;
-  /* slate-950 */
   --panel: #0f172a;
-  /* slate-900 */
   --muted: #94a3b8;
-  /* slate-400 */
   --text: #e2e8f0;
-  /* slate-200 */
   --brand: #6366f1;
-  /* indigo-500 */
   --brand-2: #22d3ee;
-  /* cyan-400 */
   --ring: rgba(99, 102, 241, 0.45);
   --card: #111827;
-  /* gray-900 */
   --accent: #1f2937;
-  /* gray-800 */
-  --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 body,
@@ -184,7 +176,9 @@ nav {
   border-radius: 50px;
   box-shadow: 0px 0px 15px var(--brand);
 }
-.about{
+
+/* About */
+.about {
   width: 100%;
   height: max-content;
   display: flex;
@@ -194,7 +188,8 @@ nav {
   margin: auto;
   background-color: var(--panel);
 }
-.about h1{
+
+.about h1 {
   font-size: 30px;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
   -webkit-background-clip: text;
@@ -202,16 +197,19 @@ nav {
   text-align: center;
   margin-top: 20px;
 }
-.about p{
+
+.about p {
   font-size: 18px;
   color: #94a3b8;
   margin-bottom: 50px;
   padding: 50px;
 }
-.myinfo{
+
+.myinfo {
   width: 80%;
   margin-top: 20px;
 }
+
 /* Skills */
 main .skills {
   width: 100%;
@@ -232,18 +230,21 @@ main .skills {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.skill-tit{
+
+.skill-tit {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .skills .progress {
   width: 80%;
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   border: 1px solid var(--brand);
   box-shadow: 0px 0px 15px var(--brand);
@@ -270,64 +271,27 @@ main .skills {
   align-items: center;
   border-radius: 6px;
   background-color: #ffff;
- 
 }
 
 .logo img {
   width: 50px;
   height: 50px;
-
-}
-
-.bar .percent {
-  width: 60%;
-  display: flex;
-  justify-items: center;
-  align-content: center;
-  margin: auto;
-  background: white;
-  border-radius: 50px;
-  height: 6px;
-  position: relative;
-}
-
-.percent .fill {
-  width: 90%;
-  display: flex;
-}
-
-.progressbar {
-  display: flex;
-  background: linear-gradient(135deg, var(--brand), var(--brand-2));
-}
-
-.percent-text {
-  position: absolute;
-  right: -25px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 10px;
-  font-weight: bold;
-  color: white;
-  padding-left: 5px;
-  font-size: 12px;
-}
-
-.skill-tit {
-  width: 300px;
 }
 
 .skill-tit h3 {
   text-align: center;
   margin-bottom: 10px;
 }
-.project{
+
+/* Projects */
+.project {
   background: var(--panel);
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .project h1 {
   font-size: 30px;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
@@ -371,7 +335,8 @@ main .skills {
   height: 100%;
   margin-top: -10px;
 }
-#more_projects{
+
+#more_projects {
   width: 20%;
   height: 40px;
   border-radius: 8px;
@@ -384,15 +349,17 @@ main .skills {
   margin-bottom: 50px;
   cursor: pointer;
 }
-#more_projects:hover{
+
+#more_projects:hover {
   opacity: 70%;
 }
+
 .textbox {
   width: 100%;
 }
 
 .textbox h2 {
-  font-size:20px;
+  font-size: 20px;
   color: white;
   font-weight: 600;
   text-align: center;
@@ -417,7 +384,10 @@ main .skills {
   cursor: pointer;
 }
 
-.group {
+/* Tags */
+.group,
+.group1,
+.group2 {
   width: 80px;
   height: 25px;
   display: flex;
@@ -426,8 +396,19 @@ main .skills {
   background-color: var(--accent);
   border: 1px solid var(--brand);
   border-radius: 20px;
-  margin: 15px 0px 0px 10px;
   font-size: 12px;
+}
+
+.group {
+  margin: 15px 0px 0px 10px;
+}
+
+.group1 {
+  margin: 15px 0px 0px 10px;
+}
+
+.group2 {
+  margin-top: -10px;
 }
 
 .group i {
@@ -435,30 +416,17 @@ main .skills {
   margin-right: 10px;
 }
 
-.group1 {
-  width: 80px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--accent);
-  border: 1px solid var(--brand);
-  border-radius: 20px;
-  margin: 15px 0px 0px 10px;
-  font-size: 12px;
-}
-
 .stack {
   display: flex;
 }
 
+/* Achievements */
 .achievement {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .achievement h1 {
@@ -506,19 +474,8 @@ main .skills {
   font-weight: 500;
 }
 
-.group2 {
-  width: 80px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--accent);
-  border: 1px solid var(--brand);
-  border-radius: 20px;
-  font-size: 12px;
-  margin-top: -10px;
-}
-.prizes{
+/* Experience */
+.prizes {
   width: 100%;
   height: max-content;
   display: grid;
@@ -528,14 +485,16 @@ main .skills {
   justify-items: center;
   margin: auto;
 }
-.one{
+
+.one {
   width: 60%;
   height: 100px;
   border: 1px solid var(--brand);
   border-radius: 8px;
   box-shadow: 0px 0px 15px var(--brand);
 }
-.one h1{
+
+.one h1 {
   font-size: 24px;
   text-align: center;
   margin-top: 10px;
@@ -543,20 +502,23 @@ main .skills {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.one p{
+
+.one p {
   font-size: 28px;
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
 }
-.experience{
+
+.experience {
   width: 100%;
   height: max-content;
   display: flex;
   flex-direction: column;
   background: var(--card);
 }
-.experience h2{
+
+.experience h2 {
   font-size: 30px;
   text-align: center;
   margin-top: 20px;
@@ -564,14 +526,17 @@ main .skills {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.learn{
+
+/* Contact */
+.learn {
   width: 100%;
   display: flex;
   justify-items: center;
   align-content: center;
   margin: auto;
 }
-.work{
+
+.work {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -579,23 +544,26 @@ main .skills {
   align-items: center;
   padding: 20px;
 }
-.small_box{
+
+.small_box {
   width: 100%;
   padding: 50px;
 }
-.small_box h1{
+
+.small_box h1 {
   font-size: 24px;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: left;
 }
-.small_box p{
+
+.small_box p {
   color: #94a3b8;
   margin-top: 10px;
 }
 
-.contact_details{
+.contact_details {
   width: 50%;
   padding: 50px;
   display: flex;
@@ -604,7 +572,8 @@ main .skills {
   margin: auto;
   height: max-content;
 }
-.contact{
+
+.contact {
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -614,7 +583,8 @@ main .skills {
   border-radius: 8px;
   box-shadow: 0px 0px 15px var(--brand);
 }
-.contact h1{
+
+.contact h1 {
   font-size: 24px;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
   -webkit-background-clip: text;
@@ -622,13 +592,15 @@ main .skills {
   text-align: center;
   padding: 20px;
 }
-#contact-form{
+
+#contact-form {
   width: 80%;
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
-#contact-form input{
+
+#contact-form input {
   width: 100%;
   height: 40px;
   background-color: var(--accent);
@@ -638,10 +610,10 @@ main .skills {
   color: white;
   margin-bottom: 10px;
   outline: none;
-  padding-left: 10px; 
+  padding-left: 10px;
 }
 
-#contact-form textarea{
+#contact-form textarea {
   width: 100%;
   height: 80px;
   background-color: var(--accent);
@@ -651,9 +623,10 @@ main .skills {
   color: white;
   margin-bottom: 10px;
   outline: none;
-  padding: 10px 0px 0px 10px; 
+  padding: 10px 0px 0px 10px;
 }
-#contact-form button{
+
+#contact-form button {
   width: 40%;
   height: 40px;
   border-radius: 8px;
@@ -666,10 +639,13 @@ main .skills {
   margin-top: 10px;
   cursor: pointer;
 }
-#contact-form button:hover{
+
+#contact-form button:hover {
   opacity: 80%;
   color: white;
 }
+
+/* Footer */
 footer {
   width: 100%;
   height: 60px;
@@ -685,6 +661,7 @@ footer h2 {
   color: var(--muted);
 }
 
+/* Responsive */
 @media screen and (max-width: 750px) {
   .nav-links {
     display: none;
@@ -762,14 +739,13 @@ footer h2 {
     border-radius: 30px;
   }
 
-  
-
-
   .skills h1 {
     font-size: 24px;
     margin-top: 40px;
   }
-  
+  .skills .progress {
+    justify-content: center;
+  }
   .progress .bar {
     width: 100%;
     height: 45px;
@@ -780,22 +756,20 @@ footer h2 {
     width: 28px;
     height: 28px;
   }
-  .about h1{
+
+  .about h1 {
     font-size: 24px;
   }
-  .about p{
+
+  .about p {
     font-size: 12px;
     padding: 0px;
     text-align: center;
   }
 
-  .bar .percent {
-    width: 120px;
-    height: 4px;
-  }
-
   .skill-tit {
     width: 50px;
+    margin: auto;
   }
 
   .list {
@@ -806,7 +780,7 @@ footer h2 {
     justify-content: center;
   }
 
-  .project h1{
+  .project h1 {
     font-size: 24px;
   }
 
@@ -814,10 +788,12 @@ footer h2 {
     width: 250px;
     height: 300px;
   }
-  #more_projects{
+
+  #more_projects {
     width: 40%;
   }
-  .achievement h1{
+
+  .achievement h1 {
     font-size: 24px;
   }
 
@@ -841,51 +817,63 @@ footer h2 {
     width: 20px;
     height: 16px;
   }
-  .one h1{
-    font-size:20px;
+
+  .one h1 {
+    font-size: 20px;
   }
-  .experience h2{
+
+  .experience h2 {
     font-size: 24px;
   }
-  .learn{
+
+  .learn {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
   }
-  .work{
+
+  .work {
     width: 100%;
   }
-  .small_box{
+
+  .small_box {
     width: 100%;
-    padding: 30px;   
+    padding: 30px;
   }
-  .small_box h1{
+
+  .small_box h1 {
     font-size: 24px;
   }
-  .small_box p{
-    font-size: 12px;
-  }
-  .contact_details{
-    width: 100%;
-  }
-  .contact{
-    width: 100%;
-    padding: 0;
-  }
-  #contact-form{
-    width: 100%;
-  }
-  #contact-form input{
-    font-size: 14px;
-    height: 30px;
-  }
-  #contact-form button{
-    width: 100%;
-    font-size: 14px;
-  }
-  footer h2 {
+
+  .small_box p {
     font-size: 12px;
   }
 
+  .contact_details {
+    width: 100%;
+  }
+
+  .contact {
+    width: 100%;
+    padding: 0;
+  }
+
+  #contact-form {
+    width: 100%;
+  }
+
+  #contact-form input {
+    font-size: 14px;
+    height: 30px;
+  }
+
+  #contact-form button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  footer h2 {
+    font-size: 12px;
+  }
 }
